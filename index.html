@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,50 +16,158 @@
         <div class="header">
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="" class="logo__img"></a>
             <ul class="header__menu">
-                <li class="header__menu-item">Rooms</li>
-                <li class="header__menu-item">Reservation</li>
-                <li class="header__menu-item">Contacss</li>
+                <li class="header__menu-item"><a href="" class="header__menu-link">Rooms</a></li>
+                <li class="header__menu-item"><a href="" class="header__menu-link">Reservation</a></li>
+                <li class="header__menu-item"><a href="" class="header__menu-link">Contacts</a></li>
             </ul>
+            <button class="burger">
+                <img src="./img/burger.svg" alt="">
+            </button>
             <a href="#" class="btn header__btn">Get Started</a>
         </div>
-        <div class="section">
+        <div class="section section--main-page section--reversed">
             <div class="text-block section__text-block text-block--short">
                 <h1 class="title section__title title--big">Nature, Warmth, and Beauty in One Space</h1>
                 <p class="text text--short section__text">One place to release all the stress, bring back happines, and&nbsp;get back &nbsp;to nature. We provide the best room and nature&nbsp;for you. Come visit us anytime you want.</p>
                 <a href="#" class="btn section__btn">Reservation</a>
             </div>
-            <img src="./img/main.png" alt="Nature, Warmth, and Beauty in One Space" class="section__img">
+            <img src="./img/main.png" alt="Nature, Warmth, and Beauty in One Space" class="section__img section__img--main">
         </div>
         <div class="sections-wrap">
             <div class="section">
-                <img src="./img/cottage.png" alt="Cozy and Down to Earth Cootage Hotel in Norway." class="section__img">
+                <img src="./img/cottage.png" alt="Cozy and Down to Earth Cootage Hotel in Norway." class="section__img section__img--left">
                 <div class="text-block section__text-block">
-                    <h1 class="title section__title">Cozy and Down to Earth Cootage Hotel in Norway.</h1>
+                    <h2 class="title section__title">Cozy and Down to Earth Cootage Hotel in Norway.</h2>
                     <p class="text section__text">Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique and spectacular panorama of the Hallerbos Jungle.</p>
                     <p class="text--second text section__text ">Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and beauty with us.</p>
                     <a href="#" class="btn section__btn">Learn More</a>
                 </div>
             </div>
-            <div class="section">
+            <div class="section section--reversed">
                 <div class="text-block section__text-block">
-                    <h1 class="title section__title">Cabin Activities</h1>
+                    <h2 class="title section__title">Cabin Activities</h2>
                     <p class="text section__text">Don’t worry to get bored easily in our cabin. We have so many cabin activities for you to do it alone or with group. Maybe this is the best chance for you to make new friends or even a lover.</p>
-                    <a href="#" class="btn section__btn">Learn More</a>
                 </div>
-                <img src="./img/activity.png" alt="Cabin Activities" class="section__img">
+                <img src="./img/activity.png" alt="Cabin Activities" class="section__img section__img--right">
             </div>
             <div class="section">
+                <img src="./img/food.png" alt="100% Organic Food" class="section__img section__img--left">
                 <div class="text-block section__text-block">
-                    <h1 class="title section__title">Cabin Activities</h1>
-                    <p class="text section__text">Don’t worry to get bored easily in our cabin. We have so many cabin activities for you to do it alone or with group. Maybe this is the best chance for you to make new friends or even a lover.</p>
-                    <a href="#" class="btn section__btn">Learn More</a>
+                    <h2 class="title section__title">100% Organic Food</h2>
+                    <p class="text section__text">We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.</p>
                 </div>
-                <img src="./img/activity.png" alt="Cabin Activities" class="section__img">
             </div>
         </div>
-        
-
-
+        <div class="cards">
+            <h2 class="title cards__title">Many Rooms to Choose</h2>
+            <p class="text cards__text text--center">There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience</p>
+            <a href="#" class="btn cards__btn">Explore more</a>
+            <div class="cards__wrap">
+                <div class="card cards__card">
+                    <img src="./img/single.png" alt="Single Room" class="card__img">
+                    <div class="card__title title">Single Room</div>
+                    <p class="text card__text">Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet others.</p>
+                    <a href="" class="more-link card__link">Learn more <img class="card__link-img" src="./img/Arrow_Right.svg" alt="Learn more"></a>
+                </div>
+                <div class="card cards__card">
+                    <img src="./img/doble.png" alt="Double Room" class="card__img">
+                    <div class="card__title title">Double Room</div>
+                    <p class="text card__text">Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just for you two.</p>
+                    <a href="" class="more-link card__link">Learn more <img class="card__link-img" src="./img/Arrow_Right.svg" alt="Learn more"></a>
+                </div>
+                <div class="card cards__card">
+                    <img src="./img/cottage-room.png" alt="Cootage" class="card__img">
+                    <div class="card__title title">Cootage</div>
+                    <p class="text card__text">Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or friends.</p>
+                    <a href="" class="more-link card__link">Learn more <img class="card__link-img" src="./img/Arrow_Right.svg" alt="Learn more"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section tabs__section">
+            <div class="info-block">
+                <p class="subtitle">Start your journey!</p>
+                <h2 class="title tabs__title">How to Get My Room?</h2>
+                <p class="text tabs__text">You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point</p>
+                <div class="tabs__btn-wrap">
+                    <a href="" class="btn">Contact us</a>
+                    <a href="" class="plain-btn">Explore more room</a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab tabs__tab">
+                    <div class="tab__text-wrap">
+                        <p class="title tab__title">1. Choose a room and date</p>
+                    </div>
+                    <img src="./img/unfold-btn.svg" alt="Open" class="tab__open-img">
+                </div>
+                <div class="tab tabs__tab">
+                    <div class="tab__text-wrap">
+                        <p class="title tab__title">2. Check for room availability</p>
+                        <p class="text tab__text">Contact us via phone or email, ask for availability of you choice of room. We might offer you something exciting.</p>
+                    </div>
+                    <img src="./img/fold-btn.svg" alt="Close" class="tab__close-img">
+                </div>
+                <div class="tab tabs__tab">
+                    <div class="tab__text-wrap">
+                        <p class="title tab__title">3. Enjoy your room</p>
+                    </div>
+                    <img src="./img/unfold-btn.svg" alt="Open" class="tab__open-img">
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <h2 class="title review__title">Hear From Our Happy Customers</h2>
+            <img src="./img/client.png" alt="Kirana Dunham" class="review__img">
+            <p class="text review__text text--center">“Great service, great food, great people. The scenery is also beautiful, you can do so much activity even with your famility. Worth every penny! you should come and see for your self.  5 out of 5! the waffle is great!”</p>
+            <p class="review__name">Kirana Dunham</p>
+            <div class="slider-btns slider__btns">
+                <div class="slider-btn slider__btn"></div>
+                <div class="slider-btn slider__btn slider-btn--selected"></div>
+                <div class="slider-btn slider__btn"></div>
+                <div class="slider-btn slider__btn"></div>
+            </div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="section footer__section">
+                <div class="footer__info-wrap">
+                    <a href="./index.html" class="logo"><img src="./img/logo-white.svg" alt="" class="logo__img"></a>
+                    <p class="text footer__text text--white text--small">Your Best Private Hideway From Crowd. Back to Nature.</p>
+                    <div class="footer__contacts-wrap">
+                        <a href="" class="footer__contacts-link">
+                            <img src="./img/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="" class="footer__contacts-link">
+                            <img src="./img/instagram-logo.svg" alt="instagram">
+                        </a>
+                        <a href="" class="footer__contacts-link">
+                            <img src="./img/facebook.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav-wrap">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item text text--white text--small text--bold">Rooms</li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Single Room</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Double Room</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Cabin</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item text text--white text--bold text--small">Reservation</li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">See the Steps</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Best Time</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item text text--white text--bold text--small">Contact</li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Our Number</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Our Email</a></li>
+                        <li class="footer__nav-item"><a href="" class="footer__nav-item text text--white text--small">Our Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
